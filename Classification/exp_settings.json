@@ -1,0 +1,18 @@
+{
+    "data_sup": {
+        "train_roots": ["datasets/xbd_graph/nepal", "datasets/xbd_graph/joplin", "datasets/xbd_graph/puna"],
+        "train_disasters": ["nepal-flooding", "joplin-tornado", "lower-puna-volcano"],
+        "train_paths": ["datasets/xbd/tier3_bldgs/", "datasets/xbd/tier3_bldgs/", "datasets/xbd/tier3_bldgs/"],
+        "batch_size": 256,
+        "leak": true
+    },
+    "model": {
+        "name": "joplin",
+        "hidden_units": 32,
+        "num_layers": 2,
+        "lr": 0.0003,
+        "dropout_rate": 0.5
+    },
+    "epochs": 50,
+    "merge_classes": true
+}
